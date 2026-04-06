@@ -5,10 +5,7 @@ import pandas as pd
 import sys
 import os
 
-# Workaround for pickled model saved with typo
-sys.modules['mport numpy as np'] = np
-setattr(np, 'import pandas as pd', pd)
-setattr(np, 'import pandas as df', pd)
+# Standard ML loading approach
 
 app = FastAPI()
 
